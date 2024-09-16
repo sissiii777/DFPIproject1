@@ -1,0 +1,41 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+/*       每个格子20*20，三种颜色 */
+
+.grid {
+  display: flex;
+/*           gap: 5px; */
+/*           看看要不要格子间有空隙，从而表现出一次具体走几格。 */
+  flex-wrap: nowrap;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.player {
+  background-color: blue;
+}
+
+.target {
+  background-color: yellow;
+}
+
+#score {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#level {
+  font-size: 18px;
+  margin: 10px;
+}
